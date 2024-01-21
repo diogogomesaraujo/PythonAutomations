@@ -1,7 +1,18 @@
+# To create the Automator follow this steps:
+
+#1. Open "Automator" on your Mac.
+#2. Choose "New Document" and select "Folder Action".
+#3. Set the folder to watch (e.g., Downloads).
+#4. Drag "Run Shell Script" from the actions list to the workflow area.
+#5. Choose your shell (e.g., /bin/zsh) from the "Shell" dropdown.
+#6. Type your Python script command (e.g., python3 /path/to/script.py).
+#7. Save the Automator action with a meaningful name.
+#8. Test by adding a file to the folder.
+
 import os
 from datetime import datetime
 
-source = "/Users/diogoaraujo/Downloads"
+source = "/Users/diogoaraujo/Downloads" # change this to your downloads folder
 
 # Define a dictionary for extension mapping to folder names
 extension_mapping = {
